@@ -1,0 +1,73 @@
+<android.widget.ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="wrap_content" tools:context="fragment.SearchFragment">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+   <LinearLayout
+       android:background="#ffd9e4e2"
+       android:id="@+id/lin"
+       android:layout_width="match_parent"
+       android:layout_height="40dp"
+       android:orientation="horizontal"
+       >
+       <EditText
+           android:paddingLeft="5dp"
+           android:layout_margin="7dp"
+           android:id="@+id/search_edtext"
+           android:drawableLeft="@drawable/wuyou_search_icon"
+           android:background="@drawable/search_editview_shape"
+           android:hint="@string/search_edittext"
+          android:textSize="15dp"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           />
+
+       </LinearLayout>
+
+    <TextView
+
+        android:background="@color/white"
+        android:drawableLeft="@drawable/nvrenjie"
+        android:layout_below="@id/lin"
+        android:id="@+id/search_text_one"
+        android:text="@string/search_text_one"
+        style="@style/search_text"
+        />
+
+    <autoview.MyGridView
+
+        android:background="@color/white"
+        android:numColumns="4"
+        android:id="@+id/search_gridview_one"
+        android:layout_below="@+id/search_text_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        </autoview.MyGridView>
+
+    <TextView
+        android:background="@color/white"
+        style="@style/search_text"
+        android:id="@+id/search_text_two"
+        android:layout_below="@id/search_gridview_one"
+        android:drawableLeft="@drawable/nanrenzhuang"
+        android:text="@string/search_text_two"
+
+        />
+
+    <autoview.MyGridView
+        android:numColumns="4"
+        android:id="@+id/search_gridview_two"
+        android:layout_below="@+id/search_text_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+
+
+    </RelativeLayout>
+
+
+
+</android.widget.ScrollView>

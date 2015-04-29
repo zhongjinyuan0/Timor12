@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/homePageViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <RadioGroup
+        android:background="#FFF"
+        android:id="@+id/homePagerRadioGroup"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/homeradioButton0"
+            android:drawableTop="@drawable/homeradiodrawable_selected"
+            android:text="首页"
+            style="@style/homeradioButton"/>
+        <RadioButton
+            android:id="@+id/homeradioButton1"
+            android:drawableTop="@drawable/searchradiodrawable_selected"
+            android:text="搜索"
+            style="@style/homeradioButton" />
+
+        <CheckBox
+            android:layout_gravity="center"
+            android:background="@drawable/photocheckboxradio_selected"
+            android:button="@null"
+            android:id="@+id/homecheckBox"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+
+        <RadioButton
+            android:id="@+id/homeradioButton2"
+            android:drawableTop="@drawable/messageradiodrawable_selected"
+            android:text="消息"
+            style="@style/homeradioButton" />
+        <RadioButton
+            android:id="@+id/homeradioButton3"
+            android:drawableTop="@drawable/personalcenterradio_selected"
+            android:text="我的"
+            style="@style/homeradioButton" />
+
+
+    </RadioGroup>
+
+</LinearLayout>
